@@ -1,0 +1,261 @@
+body{
+    background-color: #026875;
+    font-family: 'Lato', sans-serif;
+  }
+  section {
+    -webkit-box-shadow: 5px 1px 15px 3px #000000; 
+    box-shadow: 5px 1px 15px 3px #000000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    margin-top: 100px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  section h1 {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  header {
+    background-image: url('https://i.pinimg.com/originals/e7/74/30/e774306c7eaa8c99445d50f7b585d6e8.png');
+    background-size: cover;
+    height: 80px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  div {
+    max-width: 500px;
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid black;
+    background-color: #bac3d6;
+    border-radius: 5px;
+  }
+  .menu {
+    background-color: white;
+      border-bottom: 3px solid #3D314A;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex ;
+      justify-content: space-between;
+      align-items: center;
+    font-family: 'Fira Code', Arial, Helvetica, sans-serif;
+          color: rgb(255, 255, 255);
+          border-bottom: 3px solid;     
+  }
+  .menu a {
+    text-decoration: none !important; 
+    margin-right: 20px; 
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    color: #026875;
+  }
+  .text-list{
+    text-decoration: none;
+    color: black;
+  }
+  .text-list:hover {
+    color: #026875;
+  }
+  li {
+    text-decoration: none ;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Fira Code', Arial, Helvetica, sans-serif;
+    color: black;
+
+  }
+  
+  .pdf-buttons {
+    text-decoration: none !important; 
+    margin-right: 20px; 
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex ;
+    justify-content: space-between;
+    font-family: 'Fira Code', Arial, Helvetica, sans-serif;
+          color: rgb(255, 255, 255);
+          
+  }
+  img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  
+      
+  }
+  .avatar{
+      width:150px;
+      height:150px;
+      border-radius:100%;
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+      transform: translateY(-80px);
+      border: 5px solid white;
+      box-shadow: 0 3px 5px rgba(0,0,0,1);
+      transition: transform .5s ease-in-out;
+      animation: flutuar 5s ease-in-out infinite;
+
+    /*Uma das inspirações para utilizar essa avatar flutuante foi o Shorts abaixo:
+    https://www.youtube.com/watch?v=BTQHO-yP-CA
+    Em adição, reforço que ja fiz uma atividade semelhante em um curso de curta duração que ja realizei (ALURA) e quis trazer novamente aqui no desafio.
+    */
+  }
+  
+  .socialBar{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+  }
+  
+  .socialIcon{
+      width:32px;
+      height:32px;
+      transition: transform .3s ease-in-out;
+      margin-right:10px;
+      margin-left:10px;
+  }
+  
+  .socialIcon:hover{
+    transform: scale(1.2);
+}
+ /*Uma das inspirações para utilizar essa avatar flutuante foi o Shorts abaixo:
+    https://www.youtube.com/watch?v=BTQHO-yP-CA
+    Em adição, reforço que ja fiz uma atividade semelhante em um curso de curta duração que ja realizei (ALURA) e quis trazer novamente aqui no desafio.
+    */
+@keyframes flutuar {
+    0%{
+        transform: translateY(-80px);
+        box-shadow: 0 3px 5px rgba(0,0,0,1);
+    }
+    50%{
+        transform: translateY(-90px);
+        box-shadow: 0 30px 10px rgba(0,0,0,.2);
+    }
+    100%{
+        transform: translateY(-80px);
+        box-shadow: 0 3px 5px rgba(0,0,0,1);
+    }
+}
+/*
+De longe, o maior desafio foi essa área de contato
+ O lado bom é que me ajudou bastante a "aprender" a me localizar dentro do código, entender quem interfere com o que e como.
+ Contudo, essa foi a parte onde mais busquei referências na internet.
+*/
+.container {
+    margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	
+	text-rendering:optimizeLegibility;
+}
+.container {
+    max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contact input[type="text"], 
+#contact input[type="email"], 
+#contact input[type="tel"], 
+#contact textarea, #contact button[type="submit"] 
+{ font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #026875;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h5 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+	color: #026875;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"],#contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+    resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+    background:#bac3d6;
+}
+
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+  
+  
+ 
+
